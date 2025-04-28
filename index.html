@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiran Datawad | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    header { background: #0A66C2; color: white; padding: 2rem 0; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+    nav { position: sticky; top: 0; background: white; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+    nav a { text-decoration: none; color: #333; font-weight: 600; }
+    nav a:hover { color: #0A66C2; }
+    section { padding: 4rem 2rem; max-width: 1100px; margin: auto; opacity: 0; transform: translateY(20px); transition: opacity 1s ease-out, transform 1s ease-out; }
+    section.visible { opacity: 1; transform: translateY(0); }
+    .section-title { font-size: 2rem; color: #0A66C2; margin-bottom: 1.5rem; text-align: center; }
+    .about-text { font-size: 1.1rem; max-width: 800px; margin: auto; text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-10px); }
+    .card h3 { margin-bottom: 1rem; color: #0A66C2; }
+    .card p { font-size: 1rem; color: #555; }
+    .skills-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem; }
+    .skill { background: #0A66C2; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 1rem; }
+    form { max-width: 600px; margin: 2rem auto; display: flex; flex-direction: column; gap: 1rem; }
+    input, textarea { padding: 1rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+    button { background: #0A66C2; color: white; padding: 1rem; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: background 0.3s ease; }
+    button:hover { background: #004080; }
+    .resume-btn { background: #004080; color: white; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .resume-btn:hover { background: #00264d; }
+    footer { background: #0A66C2; color: white; padding: 1.5rem 0; text-align: center; margin-top: 4rem; }
+    .btn { background: #0A66C2; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; margin: 0.5rem; text-decoration: none; display: inline-block; transition: background 0.3s ease; }
+    .btn:hover { background: #004080; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kiran Datawad</h1>
+    <p>Odoo Developer | Full Stack Developer | Web Enthusiast</p>
+    <div style="margin-top: 1rem;">
+      <a href="mailto:kirandatawad@gmail.com" class="btn">Email Me</a>
+      <a href="https://www.linkedin.com/in/kiran-datawad-173b37232" class="btn" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Kirandat" class="btn" target="_blank">GitHub</a>
+      <a href="/path/to/Kiran_Datawad_Resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      I am a passionate Odoo Developer and Full Stack Developer based in Bangalore, India. I specialize in building seamless user experiences and efficient backend systems using technologies like Python, React.js, Odoo ERP, and more. I love solving complex problems and continuously learning new skills to enhance my work.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Bachelor of Engineering</h3>
+        <p>K S School of Engineering and Management, Bangalore<br>Graduating July 2024</p>
+      </div>
+      <div class="card">
+        <h3>PUC</h3>
+        <p>Tungal Science Composite PU College, Jamakhandi<br>Completed March 2020</p>
+      </div>
+      <div class="card">
+        <h3>High School</h3>
+        <p>Viswabharathi Kannada Medium School, Harugeri<br>Completed March 2018</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>IndiSight – Indian Monument Recognition</h3>
+        <p>Developed a Python-based website providing information on Indian monuments. Improved user engagement by 30% through responsive web design.</p>
+      </div>
+      <div class="card">
+        <h3>Crime Complaint Management System</h3>
+        <p>Designed a system with HTML, CSS, MySQL, and Firebase to streamline complaint handling and improve database performance by 30%.</p>
+      </div>
+      <div class="card">
+        <h3>Student Management Application</h3>
+        <p>Built a system using Flask, React.js, and MySQL to manage student data, enhancing data processing speed by 40% in educational institutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Odoo ERP 18 Development</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">SQL (MySQL)</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">Google Cloud</div>
+      <div class="skill">AWS</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Git</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form onsubmit="alert('Message Sent Successfully!');">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kiran Datawad. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const options = {
+      threshold: 0.1
+    };
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
+
